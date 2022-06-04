@@ -4,8 +4,8 @@ handler.before = m => {
   if (user.afk > -1) {
     let test = `
 ╭──[ *BERHENTI AFK !* ]──✧
-┆ *Alasan* : ${user.afkReason ? '' + user.afkReason : ''}
-┆ *Time* : ${clockString(new Date - user.afk)}
+┆ *Alasan🤠* : ${user.afkReason ? '' + user.afkReason : ''}
+┆ *Time⏰* : ${clockString(new Date - user.afk)}
 ╰┅────★
 `.trim()
 conn.sendButton(m.chat, test, wm, '⋮☰ Menu', '.menu', m)
@@ -22,7 +22,7 @@ conn.reply(test)
     let reason = user.afkReason || ''
     let str = `╭──[ *JANGAN TAG DIA!* ]──✧
 ┆ ${reason ? '*Alasan* : ' + reason : 'Tanpa Alasan'}
-┆ *Time* : ${clockString(new Date - afkTime)}
+┆ *Time⏰* : ${clockString(new Date - afkTime)}
 ╰┅────★
 `.trim()
 conn.sendButton(m.chat, str, `${wm}`,'Okiee', 'okeh',m)
