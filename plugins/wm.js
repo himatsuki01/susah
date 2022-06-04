@@ -4,7 +4,7 @@ const uploadFile = require('../lib/uploadFile')
 const uploadImage = require('../lib/uploadImage')
 let { webp2png } = require('../lib/webp2mp4')
 let handler = async (m, { conn, text }) => {
-  let stiker = false
+  let stiker = true
   try {
     let [packname, ...author] = text.split`|`
     author = (author || []).join`|`
